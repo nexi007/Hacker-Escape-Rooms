@@ -26,8 +26,34 @@
           <li><a href="#">Contact us</a></li>
         </ul>
       </nav>
+	  
+	  <!-- MOBILE MENU BUTTON -->
+    <button class="menu-toggle mobile-only"
+            aria-label="Open menu"
+            aria-controls="mobile-menu"
+            aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
     </div>
   </header>
+  
+  <!-- MOBILE OVERLAY MENU -->
+<div id="mobile-menu" class="mobile-menu" hidden>
+  <div class="mobile-menu__backdrop" data-close></div>
+  <nav class="mobile-menu__panel" aria-label="Mobile">
+    <button class="menu-close" aria-label="Close menu" data-close>
+      <span class="x"></span><span class="x"></span>
+    </button>
+    <ul class="mobile-menu__list">
+      <li><a href="#">Play online</a></li>
+      <li><a href="#">Play on-site</a></li>
+      <li><a href="#">The story</a></li>
+      <li><a href="#">Contact us</a></li>
+    </ul>
+  </nav>
+</div>
 
   <!-- ========================= HERO SECTION ========================= -->
   <section class="hero">
@@ -180,6 +206,8 @@
       </div>
     </div>
   </footer>
+
+<script src="app.js"></script>
 
 </body>
 </html>
